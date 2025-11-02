@@ -8,12 +8,22 @@
   </head>
   <body>
     <!-- صحنه‌ی سه‌بعدی -->
-    <a-scene>
-      <!-- یک جعبه -->
-      <a-box position="0 1 -3" color="red"></a-box>
+      <a-scene>
+        <!-- کره نارنجی -->
+        <a-sphere position="-1 1.25 -3" radius="1.25" color="orange"></a-sphere>
 
-      <!-- آسمان -->
-      <a-sky color="skyblue"></a-sky>
-    </a-scene>
+        <!-- جعبه آبی -->
+        <a-box position="1 0.5 -3" rotation="0 45 0" color="dodgerblue"></a-box>
+
+        <!-- استوانه سبز -->
+        <a-cylinder position="0 0.75 -2" radius="0.5" height="1.5" color="seagreen"></a-cylinder>
+
+        <!-- زمین -->
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="8" height="8" color="#ccc"></a-plane>
+
+        <!-- آسمان -->
+        <a-sky color="#ECECEC"></a-sky>
+      </a-scene>
+
   </body>
 </html>
