@@ -10,6 +10,7 @@
       <!-- منابع -->
       <a-assets>
         <img id="wood" src="wood.jpg">
+        <a-asset-item id="Garage" src="Garage.glb"></a-asset-item>
       </a-assets>
 
       <!-- نور -->
@@ -20,8 +21,10 @@
       <a-entity camera look-controls position="0 1.6 0"></a-entity>
 
       <!-- جعبه با بافت چوب -->
-      <a-box position="0 1 -3" rotation="0 45 0" width="1.5" height="1.5" depth="1.5"
-             src="#wood" shadow></a-box>
+      <a-box position="0 1 -3" rotation="0 45 0" width="1.5" height="1.5" depth="1.5" src="#wood" shadow></a-box>
+      
+      <!-- مدل سه بعدی -->
+      <a-entity gltf-model="#Garage" position="2 0 -3" scale="0.5 0.5 0.5"></a-entity>
 
       <!-- زمین -->
       <a-plane position="0 0 -4" rotation="-90 0 0" width="8" height="8" color="#ccc"></a-plane>
