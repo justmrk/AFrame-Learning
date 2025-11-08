@@ -10,6 +10,7 @@
       <!-- منابع -->
       <a-assets>
         <img id="wood" src="wood.jpg">
+        <img id="grass" src="grass.jpg">
         <a-asset-item id="Garage" src="Garage.glb"></a-asset-item>
       </a-assets>
 
@@ -27,7 +28,7 @@
       <a-entity gltf-model="#Garage" position="2 0 -3" scale="0.5 0.5 0.5"></a-entity>
 
       <!-- زمین -->
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="8" height="8" color="#ccc"></a-plane>
+      <a-plane src="#grass" position="0 0 -4" rotation="-90 0 0" width="8" height="8" color="#ccc"></a-plane>
 
       <!-- آسمان -->
       <a-sky color="#ECECEC"></a-sky>
