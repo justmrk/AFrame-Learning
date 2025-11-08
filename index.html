@@ -46,16 +46,5 @@
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
     <script src="app.js"></script>
-    <script>
-  AFRAME.registerComponent('click-change', {
-    init: function () {
-      let el = this.el;
-      el.addEventListener('click', function () {
-        el.setAttribute('color', '#39FF14'); // سبز فسفری!
-        el.setAttribute('position', {x: 0, y: 2, z: -3});
-      });
-    }
-  });
-</script>
   </body>
 </html>
