@@ -35,6 +35,10 @@
       <!-- مدل سه بعدی -->
       <a-entity gltf-model="#Garage" position="2 0 -3" scale="0.5 0.5 0.5"></a-entity>
 
+      
+
+<a-box click-change position="-1.5 1.5 -3" color="#FF8800"></a-box>
+
       <!-- زمین -->
       <a-plane src="#grass" position="0 0 -4" rotation="-90 0 0" width="8" height="8" color="#ccc"></a-plane>
 
@@ -42,5 +46,16 @@
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
     <script src="app.js"></script>
+    <script>
+  AFRAME.registerComponent('click-change', {
+    init: function () {
+      let el = this.el;
+      el.addEventListener('click', function () {
+        el.setAttribute('color', '#39FF14'); // سبز فسفری!
+        el.setAttribute('position', {x: 0, y: 2, z: -3});
+      });
+    }
+  });
+</script>
   </body>
 </html>
