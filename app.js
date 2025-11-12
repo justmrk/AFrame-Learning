@@ -9,8 +9,9 @@
       el.addEventListener('click', function () {
         el.setAttribute('color', '#39FF14'); // سبز فسفری!
         el.setAttribute('position', {x: -1.5 , y: 2, z: -3});
-        el.setAttribute('rotation', {x: 0, y: 90, z: 0});
-      });
-    }
+        el.setAttribute('rotation', {x: 0, y: 45, z: 0});
+        el.setAttribute('animation__click', { property: 'position', to: '0 2 -3', startEvents: 'click', dur: 500 });
+        });
+     }
   });
 
